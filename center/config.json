@@ -24,5 +24,8 @@
         ],
         "rwTimeout": 3,
         "dialTimeout": 3
+    },
+    "log": {
+        "level": "DEBUG"
     }
 }
