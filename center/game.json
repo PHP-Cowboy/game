@@ -1,0 +1,16 @@
+{
+    "servers": [
+        {
+            "id": "game-AB",
+            "serverType": "game",
+            "handleTimeOut": 10,
+            "maxRunRoutineNum": 10240
+        },
+        {
+            "id": "game-Crash",
+            "serverType": "game",
+            "handleTimeOut": 10,
+            "maxRunRoutineNum": 10240
+        }
+    ]
+}

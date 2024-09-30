@@ -9,10 +9,13 @@ import (
 var Conf *Config
 
 type Config struct {
-	Database Database `json:"database"`
-	Jwt      JwtConf  `json:"jwt"`
-	Etcd     EtcdConf `json:"etcd"`
-	Log      LogConf  `json:"log"`
+	ServerType string   `json:"serverType"`
+	HeartTime  int64    `json:"heartTime"`
+	Database   Database `json:"database"`
+	Nats       NatsConf `json:"nats"`
+	Jwt        JwtConf  `json:"jwt"`
+	Etcd       EtcdConf `json:"etcd"`
+	Log        LogConf  `json:"log"`
 }
 
 type LogConf struct {
@@ -47,6 +50,11 @@ type RedisConf struct {
 	Host            string   `json:"host"`
 	Port            int      `json:"port"`
 }
+
+type NatsConf struct {
+	Url string `json:"url"`
+}
+
 type EtcdConf struct {
 	AddrList    []string       `json:"addrList"`
 	RWTimeout   int            `json:"rwTimeout"`

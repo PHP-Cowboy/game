@@ -45,3 +45,7 @@ func (m *WsManager) serveWS(w http.ResponseWriter, r *http.Request) {
 
 	client.Run()
 }
+
+func (m *WsManager) Close() {
+
+}

@@ -20,3 +20,14 @@ func (c *Center) Run(serverId string) {
 	}
 
 }
+
+func (c *Center) RegisterHandler(handlers net.LogicHandler) {
+	c.handlers = handlers
+}
+
+func (c *Center) Close() {
+	if !c.isRun {
+		return
+	}
+	c.wsManager.Close()
+}

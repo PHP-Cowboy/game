@@ -2,7 +2,7 @@ package net
 
 import "frame/protocol"
 
-type HandlerFunc func(session Session, msg []byte) (any, error)
+type HandlerFunc func(session *Session, msg []byte) (any, error)
 
 type LogicHandler map[string]HandlerFunc
 

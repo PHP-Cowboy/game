@@ -1,4 +1,6 @@
 {
+    "serverType":"center",
+    "heartTime": 5,
     "database": {
         "redis": {
             "addr": "119.28.81.104:6379",
@@ -13,6 +15,9 @@
             "port": 3306,
             "database": "aviator"
         }
+    },
+    "nats": {
+        "url": "nats://localhost:4222"
     },
     "jwt": {
         "secret": "p#gRRwPZ0Fx_HoNDm",
