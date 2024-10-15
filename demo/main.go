@@ -16,6 +16,10 @@ func main() {
 		//21.70, //燃气费
 		//9.19
 
+		//10.15
+		46.62, 66.38, 40.06, 50.40, 36.85, 121.67, 29.29, 65.26, 46.27, 34.56, //小象超市
+		23.93, 20.56, //美团优选
+
 	}
 
 	total := float64(0)
@@ -25,11 +29,11 @@ func main() {
 	}
 
 	//水费
-	wRate := float64(0)
+	wRate := float64(20.30)
 	//电费
-	eBill := float64(0)
+	eBill := float64(95.74)
 	//燃气费
 	gCost := float64(0)
 
-	fmt.Println(total - wRate - eBill - gCost/2)
+	fmt.Println((total - wRate - eBill - gCost) / 2)
 }
