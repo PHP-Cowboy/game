@@ -33,11 +33,11 @@ func main() {
 	}
 
 	//水费
-	wRate := float64(20.30)
+	wRate := float64(17.4) // 17.4 + 17.4
 	//电费
-	eBill := float64(95.74)
+	eBill := float64(84.9) //59.16 + 47.79
 	//燃气费
-	gCost := float64(0)
+	gCost := float64(27.9)
 
 	fmt.Println((total - wRate - eBill - gCost) / 2)
 }
